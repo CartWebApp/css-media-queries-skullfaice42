@@ -64,7 +64,40 @@
 
 /* Tablet Styles*/
 
+@media screen and (min-width:520px) and (max-width: 1024px){
+  .flex-container {
+    height: fit-content;
+  }
 
+  .quarter {
+    width: 48%;
+  }
+
+  .third{
+    width: 48%;
+    order: 2;
+  }
+
+  .third:last-child{
+    width: 97%;
+    /* flex-grow: 1; */
+    order: 1;
+  }
+}
+
+
+@media screen and (max-width: 520px){
+ .half, .third, .quarter{
+  width: 98%;
+ }
+}
+
+
+
+
+
+/* media screen will alter whatever is inside of it  */
+/* you can alter the size of each componment if you want */
 
 
 /* Mobile Styles*/
